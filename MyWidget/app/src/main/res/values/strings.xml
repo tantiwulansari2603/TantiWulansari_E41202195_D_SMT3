@@ -1,0 +1,13 @@
+<resources>
+<!--List item yang akan ditampilkan pada saat spinner atau dropdown dijalankan-->
+    <string name="app_name">MyWidget</string>
+    <string-array name="array_menu">
+        <item></item>
+        <item>Agar</item>
+        <item>Bubble</item>
+        <item>Oreo</item>
+        <item>Regal</item>
+        <item>Lotus</item>
+        <item>Bang-bang</item>
+    </string-array>
+</resources>

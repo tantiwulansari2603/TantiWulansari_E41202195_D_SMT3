@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Menggunakan scrool view agar memudahkan kita untuk scrool halaman ini-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backtext"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+<!--Digunakan untuk image view atau gambar-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/boba"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="center"
+            android:padding="3dp"/>
+<!--Digunakan untuk teks-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginRight="50dp"
+            android:text="Gug ICE"
+            android:textSize="30dp"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/backgradasi"
+        android:layout_weight="1">
+
+<!--Text View-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Masukkan Pesanan"
+            android:padding="20dp"/>
+
+<!--Edit text yang memungkinkan kita untuk mengisi sebuah data-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/backtext"
+            android:textColor="@color/black"
+            android:hint="Masukkan Nama Anda"
+            android:inputType="text"/>
+
+<!--Auto Complete Menu-->
+        <AutoCompleteTextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/backtext"
+            android:textColor="@color/black"
+            android:hint="Masukkan Menu Yang Dipilih"
+            android:inputType="text"
+            android:completionThreshold="1"/>
+
+<!--Spinner atau biasa dikenal dengan dropdown, untuk Toping-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backtext">
+            <TextView
+                android:id="@+id/toping"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:hint="Pilih Toping : "
+                android:textColor="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:textSize="18dp"/>
+            <!--Spinner atau biasa dikenal dengan dropdown, untuk Toping-->
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="130dp"
+                android:textSize="22dp"
+                android:padding="5dp"
+                android:layout_marginTop="4dp"/>
+
+        </RelativeLayout>
+
+<!--Tanggal dengan menggunakan DatePicker-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backtext">
+            <EditText
+                android:id="@+id/tglpesan"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:background="@drawable/backtext"
+                android:hint="Tanggal Pemesanan"
+                android:layout_marginLeft="15dp"
+                android:inputType="date"
+                android:importantForAutofill="no"
+                android:enabled="false"
+                android:textColor="@color/black"/>
+
+<!--Digunakan untuk membuat gambar menjadi sebuah tombol-->
+            <ImageButton
+                android:id="@+id/btn_tgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calender"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/tglpesan"
+                android:background="@drawable/backtext"
+                android:padding="13dp"/>
+
+        </RelativeLayout>
+
+
+        <!--Harga-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga : "
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+<!--Pembayaran dengan menggunakan radio button-->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Metode Pembayaran : "
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/bayar"
+                android:text="Tunai"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ShopeePay"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gopay"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+        </RadioGroup>
+
+        <!--Tombol-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan Sekarang"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:background="@drawable/backtext"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
