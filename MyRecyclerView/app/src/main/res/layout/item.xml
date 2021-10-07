@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Mengguakan Relative Layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<!--Untuk membuat daftar menu minuman-->
+    <TextView
+        android:id="@+id/tvMenu"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Menu"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--Untuk membuat rating dari menu diatas-->
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_marginLeft="10dp"
+        android:text="9"
+        android:layout_toRightOf="@+id/tvMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--Untuk membuat harga dari menu-->
+    <TextView
+        android:id="@+id/tvHarga"
+        android:text="Harga"
+        android:layout_below="@+id/tvMenu"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

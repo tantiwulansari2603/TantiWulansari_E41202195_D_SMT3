@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".DetaiMenuMinumanActivity">
+
+    <!--Menampilkan daftar menu minuman-->
+    <TextView
+        android:id="@+id/tvMenu"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:text="Menu"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Untuk menampilkan rating dari menu-->
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_marginLeft="10dp"
+        android:text="9"
+        android:paddingLeft="20dp"
+        android:layout_toRightOf="@+id/tvMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Untuk menampilkan harga dari menu-->
+    <TextView
+        android:id="@+id/tvHarga"
+        android:text="Harga"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Untuk menampilkan separator yang digunakan untuk memisahakan antara harga dan cup-->
+    <TextView
+        android:id="@+id/separator"
+        android:text="|"
+        android:layout_below="@+id/tvMenu"
+        android:layout_toRightOf="@+id/tvHarga"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Untuk menampilkan ukuran cup minuman-->
+    <TextView
+        android:id="@+id/tvCup"
+        android:text="Cup : Besar"
+        android:layout_below="@+id/tvMenu"
+        android:layout_toRightOf="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Menapilkan Deskripsi singkat tentang menu tersebut-->
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:text="Tentang Menu"
+        android:layout_below="@+id/tvHarga"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
